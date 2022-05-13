@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Mem Slider</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="slider">
+            <input type="radio" name="slider" id="img1" checked>
+            <input type="radio" name="slider" id="img2">
+            <input type="radio" name="slider" id="img3">
+            <input type="radio" name="slider" id="img4">
+            <div class="slide" id="slide1">
+                <div class="slide_image image1"></div>
+                 <p class="mem1 mem">Discriotion mem1</p>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="slide_image image2"></div>
+                <p class="mem2  mem">Discriotion mem2</p>
+           </div>
+           <div class="slide" id="slide3">
+                <div class="slide_image image3"></div>
+                <p class="mem3  mem">Discriotion mem3</p>
+            </div>
+            <div class="slide" id="slide4">
+                <div class="slide_image image4"></div>
+                <p class="mem4  mem">Discriotion mem4</p>
+            </div>
+        </div>
+        <div class="dots" id="dots">
+            <label for="img1" id="dot1"></label>
+            <label for="img2" id="dot2"></label>
+            <label for="img3" id="dot3"></label>
+            <label for="img4" id="dot4"></label>
+        </div>
+        
+    </div>
     
 </body>
 </html>

@@ -12,6 +12,11 @@ body {
     align-items: center;
     background-color: rgb(223, 176, 176);
 }
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -25,6 +30,7 @@ body {
     width: 50rem;
     height: 64rem;
     overflow: hidden;
+    
 }
 .slide {
     width: 100%;
@@ -53,16 +59,19 @@ input {
 .dots {
     position: absolute;
     bottom: 50px;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     margin: 5px;
     z-index: 300;
 }
 .dots label {
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
-    border: solid #000 2px;
+    border: solid rgb(223, 176, 176) 7px;
+    background-color: darkgray;
     cursor: pointer;
     margin: 5px;
 }
@@ -80,16 +89,22 @@ input {
     opacity: 1;
     visibility: visible;
 }
-#img2:checked ~ #dots #dot2 {
+#img2:checked ~ .dots #dot2 {
     background: #000;
 }
 #img3:checked ~ #slide3{
     opacity: 1;
     visibility: visible;
 }
+#img3:checked ~ .dots #dot3 {
+    background: #000;
+}
 #img4:checked ~ #slide4 {
     opacity: 1;
     visibility: visible;
+}
+#img4:checked ~ .dots #dot4 {
+    background: #000;
 }
 .image1 {
     background-image: url(./images/1.jpg);
@@ -102,4 +117,27 @@ input {
 }
 .image4 {
     background-image: url(./images/4.jpg);
+}
+
+@media (max-width: 540px) {
+    .slide_image {
+        height: 30rem;
+        width: 30rem;
+    }
+    .slider {
+        height: 44rem;
+        width: 30rem;
+    }
+    .image1 {
+        background-image: url(./images/1min.jpg);
+    }
+    .image2 {
+        background-image: url(./images/2min.jpg);
+    }
+    .image3 {
+        background-image: url(./images/3min.jpg);
+    }
+    .image4 {
+        background-image: url(./images/4min.jpg);
+    }
 }

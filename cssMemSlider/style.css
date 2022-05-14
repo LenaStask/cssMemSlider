@@ -54,7 +54,7 @@ input {
     visibility: hidden;
 }
 .mem {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 .dots {
     position: absolute;
@@ -137,8 +137,11 @@ input {
         width: 30rem;
     }
     .slider {
-        height: 44rem;
+        height: 50rem;
         width: 30rem;
+    }
+    .dots {
+        bottom: 10rem;
     }
     .image1 {
         background-image: url(./images/1min.jpg);

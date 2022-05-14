@@ -28,7 +28,7 @@ h1 {
     position: relative;
     margin: 0 auto;
     width: 50rem;
-    height: 64rem;
+    height: 68rem;
     overflow: hidden;
     
 }
@@ -58,7 +58,7 @@ input {
 }
 .dots {
     position: absolute;
-    bottom: 50px;
+    bottom: 8rem;
     left: 0;
     right: 0;
     display: flex;
@@ -67,44 +67,56 @@ input {
     z-index: 300;
 }
 .dots label {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: solid rgb(223, 176, 176) 7px;
-    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem; 
     cursor: pointer;
     margin: 5px;
 }
-.dots label:hover {
+.dots div {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: solid #000 2px;
     background: #000;
+}
+.dots label:hover div{
+    background: #fff;
+    border-color: #fff;
+}
+.dots label:active div {
+    border-color: #fff;
 }
 #img1:checked ~ #slide1 {
     opacity: 1;
     visibility: visible;
 }
-#img1:checked ~ .dots #dot1 {
-    background: #000;
+#img1:checked ~ .dots #dot1 div{
+    background: transparent;
 }
 #img2:checked ~ #slide2 {
     opacity: 1;
     visibility: visible;
 }
-#img2:checked ~ .dots #dot2 {
-    background: #000;
+#img2:checked ~ .dots #dot2  div{
+    background: transparent;
 }
 #img3:checked ~ #slide3{
     opacity: 1;
     visibility: visible;
 }
-#img3:checked ~ .dots #dot3 {
-    background: #000;
+#img3:checked ~ .dots #dot3  div{
+    background: transparent;
 }
 #img4:checked ~ #slide4 {
     opacity: 1;
     visibility: visible;
 }
-#img4:checked ~ .dots #dot4 {
-    background: #000;
+#img4:checked ~ .dots #dot4  div{
+    background: transparent;
 }
 .image1 {
     background-image: url(./images/1.jpg);

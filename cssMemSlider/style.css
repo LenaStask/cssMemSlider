@@ -148,6 +148,7 @@ input {
     .mem {
         margin-top: 7rem;
         width: 100%;
+        text-align: center;
     }
     .dots {
         grid-column: 1/3;
